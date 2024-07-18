@@ -1,0 +1,7 @@
+:root {
+    --color1: rgb(241, 115, 11);
+}
+
+li {
+    color: var(--color1);
+}
