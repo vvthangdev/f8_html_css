@@ -1,0 +1,19 @@
+/* *: là CSS mặc định cho tất cả */
+*{
+    color: green;
+}
+
+.name.name2 {
+    color: blue;
+    font-size: 30px;
+}
+
+
+.parent .child {
+    color: red;
+    font-size: 35px;
+}
+
+.title2 ~ .title2 {
+    color: aqua;
+}

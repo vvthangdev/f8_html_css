@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vvthangdev</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main3.css">
+    </head>
+    <!--
+    !important: Được đặc biệt ưu tiên hơn cả inline, nếu muốn inline lại phải thêm !important vào inline
+    1. Internal, External: không có sự ưu tiên hơn, cái nào được khai báo cuối cùng thì nó sẽ được chọn
+    2. Inline: 1000
+    3. #id: 100
+    4. .class: 10
+    5. tag: 1
+    6. Equal specificity: cái nào khai báo sau sẽ được nhận
+    7. Universal Selector and inherited (Kí hiệu *) : 0
+    Cách nào nhiều điểm hơn thì được ưu tiên-->
+    <body>
+        <div>
+            <ol>
+                <style>
+                    /* 100 + 10 = 100 điểm */
+                    #id1.c1{
+                        color: violet;
+                    }
+                    #id1 {
+                        color: green;
+                    }
+                    .c1 {
+                        color: blue;
+                    }
+                    h1 {
+                        color: red;
+                    }
+                </style>
+                
+                <h1 id="id1" class="c1">Hello</h1>
+                <h1 class="c2">Xin chao</h1>
+            </ol>
+        </div>
+    </body>
+</html>

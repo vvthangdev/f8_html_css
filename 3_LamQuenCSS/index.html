@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vvthangdev</title>
+        <meta charset="utf-8">
+        <!-- External css: Nếu file css cùng cha với file html có thể dùng luôn
+         tên file vào href
+         Kiểm tra link thành công hay chưa bằng cách kiểm tra phần source trang web-->
+        
+    </head>
+
+    <body>
+        <div>
+            <h1>CSS in HTML</h1>
+            <!-- <ol></ol>: Đánh số thứ tự cho danh sách -->
+            <ol>
+                <!-- Internal: Bên trong -->
+                <!-- sử dụng 1 cặp thẻ style trong chính file html thì được gọi
+                 là internal, cặp thẻ này có thể được tạo ở bất kỳ đâu
+                 <style>
+                h1 {
+                    color: blue;
+                    font-size: 30px;
+                }
+                </style>-->
+                <li>Internal</li>
+                <!-- Tạo một file css mới(thường là main.css)
+                 Với internal và external thì viết code ở đâu trong file html cũng được-->
+                <link rel="stylesheet" href="main.css">
+                <li>External</li>
+                <!-- Inline sẽ viết 1 attribute kiểu style vào trực tiếp một head -->
+                <li>Inline</li>
+            </ol>
+            
+            <h1 style="color: red; font-size: 15px;">Hello</h1>
+        </div>
+    </body>
+</html>
