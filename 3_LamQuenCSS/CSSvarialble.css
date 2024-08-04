@@ -1,3 +1,4 @@
+/* Root: biến toàn cục */
 :root {
     --color1: rgb(241, 115, 11);
 }
@@ -5,3 +6,13 @@
 li {
     color: var(--color1);
 }
+
+/* li1 {
+    color: var(--color1);
+} */
+
+ h1 {
+    /* incolor sẽ chỉ là 1 biến cục bộ */
+    --inColor: black;
+    color: var(--inColor);
+ }
