@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>vvthangdev</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: 120px;
+                height: 100px;
+                background: rgba(170, 29, 173, 0.455);
+            }
+            .box::after {
+                content: attr(data-title);
+            }
+            .box:active {
+                background: rgb(218, 218, 232);
+            }
+            li:first-child {
+                color: red;
+            }
+            ul:first-child {
+                color: green;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" data-title="Đây là box màu hồng!">
+            
+        </div>
+        <div>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </body>
+</html>
